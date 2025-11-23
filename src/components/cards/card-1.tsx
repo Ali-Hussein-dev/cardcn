@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Placeholder = {
 	title: <div className="bg-accent h-8 max-w-40 w-full rounded-md" />,

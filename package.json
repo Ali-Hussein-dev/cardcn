@@ -31,6 +31,7 @@
     "@unpic/react": "^1.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "jotai": "^2.15.1",
     "lucide-react": "^0.544.0",
     "motion": "^12.23.24",
     "react": "^19.2.0",
