@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-18",
+  "type": "registry:component",
+  "title": "Card 18",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-18.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\n\nconst Placeholder = {\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\n};\n\nexport const Card_18 = () => {\n\treturn (\n\t\t<div className=\"relative h-full\">\n\t\t\t<div\n\t\t\t\tclassName=\"absolute size-full rounded-xl border bg-card  dark:border-zinc-800 scale-[0.95] -top-6\"\n\t\t\t\t/* style={{\n\t\t\t\t\ttransformOrigin: \"top center\",\n\t\t\t\t}} */\n\t\t\t></div>\n\t\t\t<div\n\t\t\t\tclassName=\"absolute size-full rounded-xl border bg-card  dark:border-zinc-800 scale-[0.97] -top-3 shadow-[0_-2px_6px_-2px_var(--border)]\"\n\t\t\t\t/* style={{\n\t\t\t\t\ttransformOrigin: \"top center\",\n\t\t\t\t}} */\n\t\t\t></div>\n\t\t\t<Card className=\"z-10 isolate shadow-[0_-3px_6px_-2px_var(--border)]\">\n\t\t\t\t<CardHeader>\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\n\t\t\t\t</CardHeader>\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\n\t\t\t</Card>\n\t\t</div>\n\t);\n};\n",
+      "type": "registry:component"
+    }
+  ]
+}

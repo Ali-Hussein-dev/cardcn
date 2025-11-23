@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-10",
+  "type": "registry:component",
+  "title": "Card 10",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-10.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\nexport const Card_10 = () => {\r\n\treturn (\r\n\t\t<div className=\"relative overflow-hidden rounded-xl\">\r\n\t\t<div\r\n\t\t\tclassName=\"absolute inset-1 z-0 rounded-lg\"\r\n\t\t\tstyle={{\r\n\t\t\t\tbackgroundImage:\r\n\t\t\t\t\t\"repeating-linear-gradient(45deg, transparent, transparent 2px, var(--border) 2px, var(--border) 4px)\",\r\n\t\t\t\topacity: 0.5, // Adjust this value (0.0 to 1.0) to change opacity\r\n\t\t\t}}\r\n\t\t/>\r\n\t\t\t<Card className=\"z-10 isolate bg-transparent border-border border-2 \">\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t\t</Card>\r\n\t\t</div>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

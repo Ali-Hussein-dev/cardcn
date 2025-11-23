@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-2",
+  "type": "registry:component",
+  "title": "Card 2",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-2.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\n\r\nconst Line = ({ className = \"\" }) => (\r\n\t<div\r\n\t\tclassName={cn(\r\n\t\t\t\"h-px w-full via-zinc-400 from-1% from-zinc-200 to-zinc-600 absolute z-0 dark:via-zinc-700 dark:from-zinc-900 dark:to-zinc-500\",\r\n\t\t\tclassName,\r\n\t\t)}\r\n\t/>\r\n);\r\nconst Lines = () => (\r\n\t<>\r\n\t\t<Line className=\"bg-linear-to-l left-0 top-2 sm:top-4 md:top-6\" />\r\n\t\t<Line className=\"bg-linear-to-r bottom-2 sm:bottom-4 md:bottom-6 left-0\" />\r\n\r\n\t\t<Line className=\"w-px bg-linear-to-t right-2 sm:right-4 md:right-6 h-full inset-y-0\" />\r\n\t\t<Line className=\"w-px bg-linear-to-t left-2 sm:left-4 md:left-6 h-full inset-y-0\" />\r\n\t</>\r\n);\r\n\r\nexport const Card_2 = () => {\r\n\treturn (\r\n\t\t<div className=\"relative\">\r\n\t\t\t<Lines />\r\n\t\t\t<Card className=\"w-full border-none p-10 shadow-none\">\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t\t</Card>\r\n\t\t</div>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

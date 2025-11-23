@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-8",
+  "type": "registry:component",
+  "title": "Card 8",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-8.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\nimport {cn} from \"@/lib/utils\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\nconst Icon = ({ className }: { className: string }) => {\r\n\treturn (\r\n\t\t<div\r\n\t\t\tclassName={cn(\r\n\t\t\t\t\"size-4 absolute border rounded-xs rotate-45 border-dashed bg-card\",\r\n\t\t\t\tclassName,\r\n\t\t\t)}\r\n\t\t/>\r\n\t);\r\n};\r\n\r\nconst Icons = () => (\r\n\t<>\r\n\t\t<Icon className=\"-top-2 -left-2\" />\r\n\t\t<Icon className=\"-top-2 -right-2\" />\r\n\t\t<Icon className=\"-bottom-2 -left-2\" />\r\n\t\t<Icon className=\"-bottom-2 -right-2\" />\r\n\t</>\r\n)\r\n\r\nexport const Card_8 = () => {\r\n\treturn (\r\n\t\t<Card className=\"relative rounded-none shadow-none border-dashed\">\r\n            <Icons />\r\n\t\t\t<CardHeader>\r\n\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t</CardHeader>\r\n\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t</Card>\r\n\t);\r\n};\r\n\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

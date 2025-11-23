@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-3",
+  "type": "registry:component",
+  "title": "Card 3",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-3.tsx",
+      "content": "import {\r\n\tCard,\r\n\tCardContent,\r\n\tCardHeader,\r\n\tCardTitle,\r\n} from \"@/components/ui/card\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\n\r\nexport const Card_3 = () => {\r\n\treturn (\r\n\t\t<div className=\"p-2 border-[0.5px] rounded-xs\">\r\n\t\t\t<Card\r\n\t\t\t\tclassName={cn(\r\n\t\t\t\t\t\"border-[1.5px] bg-linear-to-br rounded-xs shadow-none\",\r\n\t\t\t\t\t// light mode\r\n\t\t\t\t\t\"from-background to-muted/60 shadow-[2px_0_8px_rgba(0,0,0,0.15)]\",\r\n\t\t\t\t\t// dark mode\r\n\t\t\t\t\t\"dark:from-background dark:via-foreground/5 dark:to-background dark:shadow-inner\",\r\n\t\t\t\t)}\r\n\t\t\t>\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t\t</Card>\r\n\t\t</div>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-9",
+  "type": "registry:component",
+  "title": "Card 9",
+  "description": "Card component",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-9.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-secondary h-8 max-w-40 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\n\r\nconst Ellipses = () => {\r\n\tconst sharedClasses =\r\n\t\t\"rounded-full outline outline-8 sm:my-6 md:my-8 size-1 my-4 bg-foreground\";\r\n\treturn (\r\n\t\t<div className=\"absolute z-0 grid h-full w-full items-center gap-8 lg:grid-cols-2\">\r\n\t\t\t<div className=\"absolute z-0 grid h-full w-full grid-cols-2 place-content-between\">\r\n\t\t\t\t<div className={`${sharedClasses} -mx-[2.5px]`}></div>\r\n\t\t\t\t<div className={`${sharedClasses} -mx-[2px] place-self-end`}></div>\r\n\t\t\t\t<div className={`${sharedClasses} -mx-[2.5px]`}></div>\r\n\t\t\t\t<div className={`${sharedClasses} -mx-[2px] place-self-end`}></div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t);\r\n};\r\n\r\nconst Container = ({ children }: { children: React.ReactNode }) => (\r\n    <div className=\"relative w-full rounded-lg border border-dashed px-4 sm:px-6 md:px-8\">\r\n        <div className=\"absolute left-0 top-4 z-0 h-px w-full bg-border sm:top-6 md:top-8\"></div>\r\n        <div className=\"absolute bottom-4 left-0 z-0 h-px w-full bg-border sm:bottom-6 md:bottom-8\"></div>\r\n        <div className=\"relative w-full border-x\">\r\n            <Ellipses />\r\n            <div className=\"relative z-20 mx-auto py-8\">{children}</div>\r\n        </div>\r\n    </div>\r\n);\r\n//======================================\r\nexport const Card_9 = () => {\r\n\treturn (\r\n\t\t<Container>\r\n\t\t\t<div className=\"w-full p-2\">\r\n                <Card className=\"border-none shadow-none\">\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n                </Card>\r\n\t\t\t</div>\r\n\t\t</Container>\r\n\t);\r\n};",
+      "type": "registry:component"
+    }
+  ]
+}
