@@ -21,11 +21,11 @@ export function Footer() {
 			<div className="container mx-auto flex flex-col gap-8 px-4 py-10 md:px-6 lg:py-16">
 				<div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
 					<div className="md:col-span-2 lg:col-span-4 max-w-md space-y-4">
-						<Link href="/">
-							<Logo/>
+						<Link to="/">
+							<Logo />
 						</Link>
 						<p className="text-muted-foreground text-sm pt-2">
-							Build production-ready forms with a few clicks
+							Free Collection of Beautifully Designed Shadcn Cards
 						</p>
 						<div className="flex gap-4">
 							<a
@@ -61,12 +61,11 @@ export function Footer() {
 							})}
 						</ul>
 					</div>
-					
 				</div>
 
 				<div className="border-border/40 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row border-dashed">
 					<p className="text-muted-foreground text-sm">
-						&copy; {new Date().getFullYear()} formcn. All rights reserved.
+						&copy; {new Date().getFullYear()} Cardcn. All rights reserved.
 					</p>
 					{/* <p className="text-muted-foreground text-xs">
             <Link href="/privacy-policy">Privacy Policy</Link>

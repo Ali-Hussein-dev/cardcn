@@ -9,7 +9,7 @@ export const Hero = () => {
 					<div className="border p-3 border-dashed bg-background rounded-lg">
 						<div className="max-w-4xl border p-4 lg:p-10 bg-muted/20 rounded-lg xl:p-14">
 							<h1 className="text-4xl font-bold mb-6 lg:mb-10 lg:text-5xl text-center text-pretty md:font-black">
-								Free Collection of Beautiful Crafted shadcn Cards
+								Free Collection of Beautifully Designed Shadcn Cards
 							</h1>
 							<div className="flex gap-4 justify-center">
 								<Button>
