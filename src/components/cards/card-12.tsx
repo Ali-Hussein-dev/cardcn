@@ -9,13 +9,13 @@ export const Card_12 = () => {
 	return (
 		<div className="relative overflow-hidden rounded-xl">
 			<div
-				className="absolute inset-0 z-1 rounded-lg opacity-50"
+				className="absolute inset-0 -z-1 rounded-lg opacity-50"
 				style={{
 					backgroundImage: `
         linear-gradient(45deg, transparent 49%, var(--border) 49%, var(--border) 51%, transparent 51%),
         linear-gradient(-45deg, transparent 49%, var(--border) 49%, var(--border) 51%, transparent 51%)
       `,
-					backgroundSize: "40px 40px",
+					backgroundSize: "22px 22px",
 				}}
 			/>
 			<Card className="z-10 isolate bg-transparent border-border">

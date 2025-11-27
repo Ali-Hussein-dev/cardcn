@@ -12,7 +12,7 @@ const Placeholder = {
 
 export const Card_4 = () => {
 	return (
-		<Card className="relative shadow-[0px_5px_0px_0px_var(--foreground)] border-foreground bg-muted/30">
+		<Card className="shadow-[0px_5px_0px_0px_var(--border)]">
 			<CardHeader>
 				<CardTitle>{Placeholder.title}</CardTitle>
 			</CardHeader>

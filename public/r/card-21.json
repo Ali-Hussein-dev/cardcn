@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-21",
+  "type": "registry:component",
+  "title": "Card 21",
+  "description": "Card component",
+  "dependencies": [
+    "@unpic/react"
+  ],
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-21.tsx",
+      "content": "import { Image } from \"@unpic/react\";\r\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-background h-5 max-w-20 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-background h-8 w-full rounded-md\" />,\r\n};\r\n\r\nexport const Card_21 = () => {\r\n\treturn (\r\n\t\t<Card className=\"group relative overflow-hidden aspect-square\">\r\n\t\t\t{/* Background image */}\r\n\t\t\t<Image\r\n\t\t\t\tlayout=\"fullWidth\"\r\n\t\t\t\tclassName=\"size-full object-cover absolute inset-0 z-0\"\r\n\t\t\t\tsrc=\"https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHByb2R1Y3RzfGVufDB8fDB8fHwy\"\r\n\t\t\t\talt=\"...\"\r\n\t\t\t/>\r\n\t\t\t{/* Overlay gradient */}\r\n\t\t\t<div className=\"absolute inset-0 bg-linear-to-t from-foreground via-foreground/20 to-foreground/5 z-10 group-hover:from-transparent group-hover:via-transparent group-hover:to-transparent transition-all duration-500\"></div>\r\n\t\t\t<div className=\"isolate z-50 flex flex-col gap-2 relative grow justify-end\">\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t\t</div>\r\n\t\t</Card>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -7,13 +7,11 @@ const Placeholder = {
 
 export const Card_1 = () => {
 	return (
-		<Card className="border border-primary relative shadow-[4px_4px_0px_0px_var(--primary)]">
+		<Card className="shadow-[5px_5px_0px_0px_var(--border)]">
 			<CardHeader>
 				<CardTitle>{Placeholder.title}</CardTitle>
 			</CardHeader>
-			<CardContent>
-				{Placeholder.content}
-			</CardContent>
+			<CardContent>{Placeholder.content}</CardContent>
 		</Card>
 	);
 };

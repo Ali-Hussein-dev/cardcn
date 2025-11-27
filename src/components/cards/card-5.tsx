@@ -19,16 +19,16 @@ const Icon = ({ className, ...rest }: React.HTMLAttributes<HTMLDivElement>) => {
 
 const Icons = () => (
 	<>
-		<Icon className="-top-0.5 -left-0.5 border-l-2 border-t-2 rounded-tl-md" />
-		<Icon className="-top-0.5 -right-0.5 border-r-2 border-t-2 rounded-tr-md" />
-		<Icon className="-bottom-0.5 -left-0.5 border-l-2 border-b-2 rounded-bl-md" />
-		<Icon className="-bottom-0.5 -right-0.5 border-r-2 border-b-2 rounded-br-md" />
+		<Icon className="-top-0.5 -left-0.5 border-l-2 border-t-2 rounded-tl-lg " />
+		<Icon className="-top-0.5 -right-0.5 border-r-2 border-t-2 rounded-tr-lg" />
+		<Icon className="-bottom-0.5 -left-0.5 border-l-2 border-b-2 rounded-bl-lg" />
+		<Icon className="-bottom-0.5 -right-0.5 border-r-2 border-b-2 rounded-br-lg" />
 	</>
 )
 
 export const Card_5 = () => {
 	return (
-		<Card className="relative">
+		<Card className="relative rounded-md bg-muted/20">
             <Icons />
 			<CardHeader>
 				<CardTitle>{Placeholder.title}</CardTitle>

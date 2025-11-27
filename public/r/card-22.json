@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-22",
+  "type": "registry:component",
+  "title": "Card 22",
+  "description": "Card component",
+  "dependencies": [
+    "@unpic/react"
+  ],
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-22.tsx",
+      "content": "import { Image } from \"@unpic/react\";\r\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-muted h-6 max-w-20 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-muted h-8 w-full rounded-md\" />,\r\n};\r\n\r\nexport const Card_22 = () => {\r\n\treturn (\r\n\t\t<Card className=\"group relative overflow-hidden aspect-square pt-0\">\r\n\t\t\t<div className=\"relative aspect-video\">\r\n\t\t\t\t<Image\r\n\t\t\t\t\tlayout=\"fullWidth\"\r\n\t\t\t\t\tclassName=\"size-full object-cover absolute inset-0 z-0\"\r\n\t\t\t\t\tsrc=\"https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=2198&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\r\n\t\t\t\t\talt=\"Abstract gradient background\"\r\n\t\t\t\t/>\r\n\t\t\t</div>\r\n\t\t\t<CardHeader>\r\n\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t</CardHeader>\r\n\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t</Card>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

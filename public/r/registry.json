@@ -255,6 +255,110 @@
         }
       ],
       "path": "src/components/cards/card-18.tsx"
+    },
+    {
+      "name": "card-19",
+      "type": "registry:component",
+      "title": "Card 19",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-19.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-19.tsx"
+    },
+    {
+      "name": "card-20",
+      "type": "registry:component",
+      "title": "Card 20",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-20.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-20.tsx"
+    },
+    {
+      "name": "card-21",
+      "type": "registry:component",
+      "title": "Card 21",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-21.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-21.tsx"
+    },
+    {
+      "name": "card-22",
+      "type": "registry:component",
+      "title": "Card 22",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-22.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-22.tsx"
+    },
+    {
+      "name": "card-23",
+      "type": "registry:component",
+      "title": "Card 23",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-23.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-23.tsx"
+    },
+    {
+      "name": "card-24",
+      "type": "registry:component",
+      "title": "Card 24",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "files": [
+        {
+          "path": "src/components/cards/card-24.tsx",   
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-24.tsx"
+    },
+    {
+      "name": "card-25",
+      "type": "registry:component",
+      "title": "Card 25",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-25.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-25.tsx"
     }
   ]
 }
