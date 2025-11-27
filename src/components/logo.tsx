@@ -51,7 +51,7 @@ export const Logo = () => {
 						y2="17"
 						stroke="var(--primary-foreground)"
 						// style="stroke:#1E1E1E;stroke:color(display-p3 0.1176 0.1176 0.1176)"
-						stroke-width="2"
+						strokeWidth="2"
 						stroke-linecap="round"
 					/>
 					<line
@@ -61,7 +61,7 @@ export const Logo = () => {
 						y2="23.4437"
 						stroke="var(--primary-foreground)"
 						// style="stroke:#1E1E1E;stroke:color(display-p3 0.1176 0.1176 0.1176)"
-						stroke-width="2"
+						strokeWidth="2"
 						stroke-linecap="round"
 					/>
 				</svg>

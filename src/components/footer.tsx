@@ -25,7 +25,7 @@ export function Footer() {
 							<Logo />
 						</Link>
 						<p className="text-muted-foreground text-sm pt-2">
-							Free Collection of Beautifully Designed Shadcn Cards
+							Free collection of beautifully designed shadcn cards
 						</p>
 						<div className="flex gap-4">
 							<a

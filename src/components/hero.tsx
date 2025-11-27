@@ -1,9 +1,10 @@
+import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { urls } from "@/constants/urls";
 
 export const Hero = () => {
 	return (
-		<div className="h-[75vh] flex flex-col items-center justify-center">
+		<div className="h-[85vh] flex flex-col items-center justify-center">
 			<div className="p-3">
 				<div className="border p-3 border-dashed rounded-lg">
 					<div className="border p-3 border-dashed bg-background rounded-lg">
@@ -12,11 +13,17 @@ export const Hero = () => {
 								Free Collection of Beautifully Designed Shadcn Cards
 							</h1>
 							<div className="flex gap-4 justify-center">
-								<Button>
-									<a href="#start-of-content">Get Started</a>
-								</Button>
 								<Button variant="outline">
-									<a href={urls.twitter}>Stay updated</a>
+									<a
+										href={urls.github}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										GitHub
+									</a>
+								</Button>
+								<Button>
+									<Link to="/cards">Get Started</Link>
 								</Button>
 							</div>
 						</div>

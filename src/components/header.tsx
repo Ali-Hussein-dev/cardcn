@@ -28,10 +28,11 @@ const socialLinks = [
 export function Header() {
 	return (
 		<header className="flex flex-row items-center justify-between px-2 md:px-4 h-14 border-b sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
-			<div className="flex gap-1 items-end">
+			<div className="flex gap-1 items-center">
 				<Link to="/" className="cursor-pointer w-fit h-fit">
-					<Logo/>
+					<Logo />
 				</Link>
+				<span className="text-xs mt-2 text-muted-foreground">Beta</span>
 			</div>
 
 			{/* Desktop Navigation */}
