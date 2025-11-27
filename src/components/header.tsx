@@ -36,11 +36,11 @@ export function Header() {
 			</div>
 
 			{/* Desktop Navigation */}
-			<div className="hidden md:flex items-center sm:gap-4 gap-2">
-				<nav className="flex gap-2 items-center">
+			<div className="hidden md:flex items-center grow sm:gap-4 gap-2">
+				<nav className="flex items-center grow pl-4">
 					{links.map(({ href, label, target, rel }) => {
 						return (
-							<Button key={href} variant="ghost" size="sm">
+							<Button key={href} variant="ghost" size="sm" className="text-sm">
 								<a href={href} target={target} rel={rel}>
 									{label}
 								</a>

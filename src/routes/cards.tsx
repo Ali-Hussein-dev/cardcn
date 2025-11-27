@@ -151,7 +151,7 @@ function RouteComponent() {
 	return (
 		<div>
 			<Header />
-			<div className="px-3 max-w-6xl mx-auto relative border-x border-border/60">
+			<div className="px-5 max-w-6xl mx-auto relative border-x border-border/60">
 				<div
 					className="absolute inset-0"
 					style={{

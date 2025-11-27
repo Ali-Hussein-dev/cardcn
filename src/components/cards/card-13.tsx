@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Placeholder = {
-	title: <div className="bg-border h-8 max-w-40 w-full rounded-md" />,
-	content: <div className="bg-border h-20 w-full rounded-md" />,
+	title: <div className="bg-white h-8 max-w-40 w-full rounded-md" />,
+	content: <div className="bg-white h-20 w-full rounded-md" />,
 };
 
 export const Card_13 = () => {
 	return (
-		<div className="relative overflow-hidden rounded-xl bg-foreground">
+		<div className="relative overflow-hidden rounded-xl bg-white">
 			<div
 				className="absolute inset-0 rounded-lg"
 				style={{
