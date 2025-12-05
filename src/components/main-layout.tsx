@@ -80,7 +80,7 @@ const MobileSidebarDrawer = () => {
 const Sidebar = () => {
 	return (
 		<>
-			<aside className="hidden lg:block w-full lg:col-span-2 py-8 px-4 sm:px-6 sticky top-2">
+			<aside className="hidden lg:block w-full lg:col-span-2 py-8 px-4 sm:px-6 sticky top-13 self-start max-h-screen overflow-y-auto">
 				<SidebarNav />
 			</aside>
 			<div className="lg:hidden">
@@ -95,7 +95,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
 			<>
 				<Header />
-				<div className="grid lg:grid-cols-12 lg:gap-6 relative">
+				<div className="grid lg:grid-cols-12 lg:gap-6">
 					<Sidebar />
 					<div className="h-full lg:col-span-8 px-2 md:px-3 lg:px-5 relative border-x border-border/60 w-full max-w-5xl">
 						<div
