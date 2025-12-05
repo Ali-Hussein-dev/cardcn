@@ -359,6 +359,36 @@
         }
       ],
       "path": "src/components/cards/card-25.tsx"
+    },
+    {
+      "name": "card-26",
+      "type": "registry:component",
+      "title": "Card 26",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-26.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-26.tsx"
+    },
+    {
+      "name": "card-27",
+      "type": "registry:component",
+      "title": "Card 27",
+      "description": "Card component",
+      "registryDependencies": ["card"],
+      "dependencies": ["@unpic/react"],
+      "files": [
+        {
+          "path": "src/components/cards/card-27.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "path": "src/components/cards/card-27.tsx"
     }
   ]
 }
