@@ -52,7 +52,7 @@ export const Logo = () => {
 						stroke="var(--primary-foreground)"
 						// style="stroke:#1E1E1E;stroke:color(display-p3 0.1176 0.1176 0.1176)"
 						strokeWidth="2"
-						stroke-linecap="round"
+						strokeLinecap="round"
 					/>
 					<line
 						x1="16.4437"
@@ -62,9 +62,9 @@ export const Logo = () => {
 						stroke="var(--primary-foreground)"
 						// style="stroke:#1E1E1E;stroke:color(display-p3 0.1176 0.1176 0.1176)"
 						strokeWidth="2"
-						stroke-linecap="round"
+						strokeLinecap="round"
 					/>
 				</svg>
 			</div>
-		);
-};
+  )
+}

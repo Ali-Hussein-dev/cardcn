@@ -23,7 +23,7 @@ export const Hero = () => {
 									</a>
 								</Button>
 								<Button>
-									<Link to="/cards">Get Started</Link>
+									<Link to="/cards">Explore cards</Link>
 								</Button>
 							</div>
 						</div>
