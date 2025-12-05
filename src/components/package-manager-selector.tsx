@@ -1,3 +1,4 @@
+import { TabsContent } from "@radix-ui/react-tabs";
 import { useAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
 import { Check, ChevronDown } from "lucide-react";
@@ -7,11 +8,9 @@ import { Button } from "@/components/ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuLabel,
-	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 
 export type PackageManager = "pnpm" | "npm" | "yarn" | "bun";
@@ -32,8 +31,8 @@ const prefixes = {
 const packageManagers = [
 	{ value: "pnpm", Icon: SiPnpm, label: "pnpm" },
 	{ value: "npm", Icon: SiNpm, label: "npm" },
-	{ value: "yarn", Icon: SiYarn, label: "yarn" },
 	{ value: "bun", Icon: SiBun, label: "bun" },
+	{ value: "yarn", Icon: SiYarn, label: "yarn" },
 ] as const;
 
 export const PackageManagerSelector = ({
@@ -89,29 +88,32 @@ export const PackageManagerSelector = ({
 						<ChevronDown className="size-4" />
 					</Button>
 				</DropdownMenuTrigger>
-				<DropdownMenuContent align="end" className="min-w-64">
-					<DropdownMenuLabel className="px-3 py-2">
-						<div className="flex flex-col gap-1">
-							<span className="text-xs text-muted-foreground">Selected:</span>
-							<code className="text-xs font-mono bg-muted px-2 py-1.5 rounded border text-foreground break-all">
+				<DropdownMenuContent align="end" className="w-full max-w-lg p-4">
+					<Tabs
+						value={selectedManager}
+						onValueChange={(value) =>
+							setSelectedManager(value as PackageManager)
+						}
+						className="bg-secondary rounded-lg pb-4 overflow-hidden"
+					>
+						<TabsList className="w-full border-b rounded-none">
+							{packageManagers.map((pm) => (
+								<TabsTrigger
+									key={pm.value}
+									value={pm.value}
+									className="flex items-center gap-1.5"
+								>
+									<pm.Icon className="size-4" />
+									<span className="hidden sm:inline">{pm.label}</span>
+								</TabsTrigger>
+							))}
+						</TabsList>
+						<TabsContent value={selectedManager}>
+							<code className="text-xs font-mono px-2 py-1.5 rounded break-all">
 								{command}
 							</code>
-						</div>
-					</DropdownMenuLabel>
-					<DropdownMenuSeparator />
-					{packageManagers.map((pm) => (
-						<DropdownMenuItem
-							key={pm.value}
-							onClick={() => setSelectedManager(pm.value)}
-							className="flex items-center gap-2 cursor-pointer"
-						>
-							<pm.Icon className="size-4" />
-							<span>{pm.label}</span>
-							{selectedManager === pm.value && (
-								<span className="ml-auto text-xs">✓</span>
-							)}
-						</DropdownMenuItem>
-					))}
+						</TabsContent>
+					</Tabs>
 				</DropdownMenuContent>
 			</DropdownMenu>
 		</div>

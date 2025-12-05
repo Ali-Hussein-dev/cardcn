@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-26",
+  "type": "registry:component",
+  "title": "Card 26",
+  "description": "Card component",
+  "dependencies": [
+    "@unpic/react"
+  ],
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/cards/card-26.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\nconst Placeholder = {\r\n\ttitle: <div className=\"bg-muted h-6 max-w-20 w-full rounded-md\" />,\r\n\tcontent: <div className=\"bg-secondary h-20 w-full rounded-md\" />,\r\n};\r\n\r\nexport const Card_26 = () => {\r\n\treturn (\r\n\t\t<div className=\"border-4 rounded-xl dark:border-card border-foreground/80 p-px dark:p-0.5\">\r\n\t\t\t<Card className=\"rounded-lg border-none bg-foreground/80 dark:bg-card shadow-none\">\r\n\t\t\t\t<CardHeader>\r\n\t\t\t\t\t<CardTitle>{Placeholder.title}</CardTitle>\r\n\t\t\t\t</CardHeader>\r\n\t\t\t\t<CardContent>{Placeholder.content}</CardContent>\r\n\t\t\t</Card>\r\n\t\t</div>\r\n\t);\r\n};\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
