@@ -6,12 +6,11 @@ import { Hero } from "@/components/hero";
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
-
-  return (
-			<div className="min-h-screen relative">
-				<Header />
-				<Hero />
-				<Footer />
-			</div>
-		);
+	return (
+		<div className="min-h-screen relative">
+			<Header />
+			<Hero />
+			<Footer />
+		</div>
+	);
 }
