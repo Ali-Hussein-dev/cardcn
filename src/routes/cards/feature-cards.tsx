@@ -1,10 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router"
 import { CategoryHeader, MainLayout } from "@/components/main-layout"
 import { WipCard } from "@/components/wip-card"
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/cards/feature-cards")({
-  component: RouteComponent,
-})
+	component: RouteComponent,
+	head: () => ({
+		meta: seo({
+			title: "Feature cards | Cardcn",
+			description:
+				"Beautifully styled shadcn cards for highlighting product features",
+		}),
+	}),
+});
 
 function RouteComponent() {
   return (

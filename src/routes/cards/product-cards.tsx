@@ -3,10 +3,18 @@ import { CardContainer } from "@/components/card-container";
 import { productCards } from "@/components/cards-map";
 import { CategoryHeader, MainLayout } from "@/components/main-layout";
 import { cardCategories } from "@/constants/card-categories";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/cards/product-cards")({
-  component: RouteComponent,
-})
+	component: RouteComponent,
+	head: () => ({
+		meta: seo({
+			title: "Product cards | Cardcn",
+			description:
+				"Free collection of styled shadcn cards for showcasing products and services",
+		}),
+	}),
+});
 
 function RouteComponent() {
   return (
