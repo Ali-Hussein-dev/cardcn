@@ -9,10 +9,12 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from "@/components/ui/drawer";
-import { cardCategories } from "@/constants/card-categories"
+import { cardCategories } from "@/constants/card-categories";
+import { urls } from "@/constants/urls";
 import { cn } from "@/lib/utils";
-import { Footer } from "./footer"
-import { Header } from "./header"
+import { Footer } from "./footer";
+import { Header } from "./header";
+import { SponsorshipSlot } from "./sponsorship-slot";
 
 const SidebarNav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 	const router = useRouterState();
@@ -90,36 +92,65 @@ const Sidebar = () => {
 	);
 };
 
-
 export const MainLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-			<>
-				<Header />
-				<div className="grid lg:grid-cols-12 lg:gap-6">
-					<Sidebar />
-					<div className="h-full lg:col-span-8 px-2 md:px-3 lg:px-5 relative border-x border-border/60 w-full max-w-5xl">
-						<div
-							className="absolute inset-0"
-							style={{
-								backgroundImage: `
+	return (
+		<>
+			<Header />
+			<div className="grid lg:grid-cols-12">
+				<Sidebar />
+				<div className="h-full lg:col-span-8 px-2 md:px-3 lg:px-5 relative border-x border-border/60 w-full max-w-5xl">
+					<div
+						className="absolute inset-0"
+						style={{
+							backgroundImage: `
         linear-gradient(45deg, transparent 49%, var(--border) 49%, var(--border) 51%, transparent 51%),
         linear-gradient(-45deg, transparent 49%, var(--border) 49%, var(--border) 51%, transparent 51%)`,
-								backgroundSize: "10px 10px",
-							}}
-						/>
-						<div className="border-x bg-background z-10 isolate w-full h-full">
-							{children}
+							backgroundSize: "10px 10px",
+						}}
+					/>
+					<div className="border-x bg-background z-10 isolate w-full h-full">
+						{children}
+					</div>
+				</div>
+				<div className="lg:col-span-2 relative">
+					<div className="sticky top-14">
+						<div className="w-full px-5 py-2 border-b border-dashed ">
+							<h2 className="text-left text-xs font-bold uppercase text-amber-500">
+								Gold Sponsors
+							</h2>
+						</div>
+						<SponsorshipSlot />
+						<div className="border-b border-dashed">
+							<Button
+								variant="ghost"
+								className="w-full rounded-none py-6"
+								asChild
+							>
+								<a
+									href={urls.becomeSponsor}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Become a sponsor
+								</a>
+							</Button>
 						</div>
 					</div>
-					<div className="lg:col-span-2"></div>
 				</div>
-				<Footer />
-			</>
-		);
-}
-export const CategoryHeader = ({ title, description }: { title: string, description: string }) => {
+			</div>
+			<Footer />
+		</>
+	);
+};
+export const CategoryHeader = ({
+	title,
+	description,
+}: {
+	title: string;
+	description: string;
+}) => {
 	return (
-		<div className="flex flex-col gap-2 py-6 border-b w-full px-4 md:px-6 mb-5 bg-accent/10">
+		<div className="relative flex flex-col gap-2 py-6 border-b w-full px-4 md:px-6 mb-5 bg-accent/10">
 			<h1 className="text-2xl font-black">{title}</h1>
 			<p className="text-sm text-muted-foreground">{description}</p>
 		</div>

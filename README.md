@@ -105,6 +105,12 @@ Make sure you have:
 - Wrangler CLI installed
 - Proper authentication set up
 
+## Sponsors
+
+This project is sponsored by:
+
+- **[shadcnstudio.com](https://shadcnstudio.com/?utm_source=cardcn&utm_medium=banner&utm_campaign=github)** - Accelerate your project development with ready-to-use, and fully customizable shadcn ui Components, Blocks, UI Kits, Boilerplates, Templates and Themes with AI Tools 🪄
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
