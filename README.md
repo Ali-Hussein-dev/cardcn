@@ -109,7 +109,9 @@ Make sure you have:
 
 This project is sponsored by:
 
-- **[shadcnstudio.com](https://shadcnstudio.com/?utm_source=cardcn&utm_medium=banner&utm_campaign=github)** - Accelerate your project development with ready-to-use, and fully customizable shadcn ui Components, Blocks, UI Kits, Boilerplates, Templates and Themes with AI Tools 🪄
+**[ShadcnStudio](https://shadcnstudio.com/?utm_source=cardcn&utm_medium=banner&utm_campaign=github)** - Shadcn blocks & templates
+
+[Become a sponsor](https://github.com/sponsors/Ali-Hussein-dev)
 
 ## Contributing
 
