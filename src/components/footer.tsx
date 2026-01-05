@@ -1,10 +1,13 @@
-
 import { Link } from "@tanstack/react-router";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { urls } from "@/constants/urls";
 import { Logo } from "./logo";
 
 const resources = [
+	{
+		name: "Shoogle",
+		href: "https://shoogle.dev?via=cardcn",
+	},
 	{
 		name: "Formcn",
 		href: "https://formcn.dev?via=cardcn",
