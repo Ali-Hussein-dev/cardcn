@@ -1,7 +1,7 @@
 export const cardCategories = [
 	{
-		name: "Plain cards",
-		to: "/cards/plain-cards",
+		name: "Basic cards",
+		to: "/cards/basic-cards",
 		description: "Beautifully styled shadcn cards for general use cases",
 		status: "wip",
 	},

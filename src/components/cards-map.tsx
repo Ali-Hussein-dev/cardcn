@@ -26,7 +26,7 @@ import { Card_25 } from "./cards/card-25";
 import { Card_26 } from "./cards/card-26";
 import { Card_27 } from "./cards/card-27";
 
-export const plainCards = [
+export const basicCards = [
 	{
 		id: "1",
 		component: <Card_1 />,
@@ -140,7 +140,7 @@ export const productCards = [
 	},
 ];
 const categories = {
-	"/cards/plain-cards": plainCards,
+	"/cards/basic-cards": basicCards,
 };
 export const getCardsCount = (str: string) => {
 	const category = Object.keys(categories).find((key) => key === str);

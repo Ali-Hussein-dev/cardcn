@@ -32,7 +32,7 @@ export function Header() {
 				<Link to="/" className="cursor-pointer w-fit h-fit">
 					<Logo />
 				</Link>
-				<span className="text-xs mt-2 text-muted-foreground">WIP</span>
+				<span className="text-xs mt-2 text-muted-foreground">ALPHA</span>
 			</div>
 
 			{/* Desktop Navigation */}
