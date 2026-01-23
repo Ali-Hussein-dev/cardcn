@@ -11,9 +11,7 @@ export const CardContainer = ({ children, id }: { children: React.ReactNode, id:
 			<CardHeader className="flex justify-between items-center px-2">
 				<span className="text-muted-foreground">#{id}</span>
 				<div className="opacity-0 group-hover:opacity-100 transition-opacity">
-					<PackageManagerSelector
-						registryUrl={`https://cardcn.dev/r/card-${id}.json`}
-					/>
+					<PackageManagerSelector registryUrl={`@cardcn/card-${id}`} />
 				</div>
 			</CardHeader>
 			{children}

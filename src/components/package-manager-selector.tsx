@@ -75,7 +75,7 @@ export const PackageManagerSelector = ({
 					)
 				)}
 				<span className="text-sm font-medium">
-					{copied ? "Copied!" : selectedPackageManager?.label}
+					{copied ? "Copied!" : "Copy"}
 				</span>
 			</Button>
 			<DropdownMenu modal={false}>
