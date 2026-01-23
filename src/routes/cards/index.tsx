@@ -37,7 +37,7 @@ function RouteComponent() {
 							<div className="grid md:grid-cols-2 gap-8">
 								{cardCategories.map((category) => (
 									<Link key={category.to} to={category.to}>
-										<Card className="group hover:shadow-md transition-shadow">
+										<Card className="group hover:shadow-md transition-shadow sequircle rounded-3xl">
 											<CardHeader>
 												<CardTitle>{category.name}</CardTitle>
 												<CardDescription>

@@ -5,9 +5,9 @@ import { urls } from "@/constants/urls";
 import { Button } from "./ui/button";
 export const WipCard = () => {
 	return (
-		<Card className="border-dashed border-2 max-w-xl mx-auto py-8 lg:py-20">
+		<Card className="border-dashed border-2 max-w-xl mx-auto py-8 lg:py-20 sequircle rounded-4xl">
 			<CardHeader>
-                <PiBarricade className="size-16 text-primary mx-auto" />
+				<PiBarricade className="size-16 text-primary mx-auto" />
 				<CardTitle className="text-center text-2xl font-bold">
 					Work in progress
 				</CardTitle>
@@ -24,8 +24,8 @@ export const WipCard = () => {
 							rel="noopener noreferrer"
 							className="flex items-center gap-2"
 						>
+							Follow on
 							<FaXTwitter className="size-4" />
-							Follow on X
 						</a>
 					</Button>
 				</div>
