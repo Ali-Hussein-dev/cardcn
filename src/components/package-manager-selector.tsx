@@ -42,6 +42,7 @@ export const PackageManagerSelector = ({
 }) => {
 	const [selectedManager, setSelectedManager] = useAtom(packageManagerAtom);
 	const [copied, setCopied] = React.useState(false);
+	const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
 	const command = `${prefixes[selectedManager]} ${registryUrl}`;
 
@@ -58,64 +59,71 @@ export const PackageManagerSelector = ({
 	);
 
 	return (
-		<div className="inline-flex items-center gap-0.5">
-			<Button
-				variant="outline"
-				size="sm"
-				className={cn(
-					"rounded-md gap-2 border rounded-r-none shadow-sm transition-all",
-				)}
-				onClick={handleCopy}
-			>
-				{copied ? (
-					<Check className="size-4" />
-				) : (
-					selectedPackageManager && (
-						<selectedPackageManager.Icon className="size-4" />
-					)
-				)}
-				<span className="text-sm font-medium">
-					{copied ? "Copied!" : "Copy"}
-				</span>
-			</Button>
-			<DropdownMenu modal={false}>
-				<DropdownMenuTrigger asChild>
-					<Button
-						variant="outline"
-						size="icon"
-						className="rounded-md border shadow-sm rounded-l-none h-8"
-					>
-						<ChevronDown className="size-4" />
-					</Button>
-				</DropdownMenuTrigger>
-				<DropdownMenuContent align="end" className="w-full max-w-lg p-4">
-					<Tabs
-						value={selectedManager}
-						onValueChange={(value) =>
-							setSelectedManager(value as PackageManager)
-						}
-						className="bg-secondary rounded-lg pb-4 overflow-hidden"
-					>
-						<TabsList className="w-full border-b rounded-none">
-							{packageManagers.map((pm) => (
-								<TabsTrigger
-									key={pm.value}
-									value={pm.value}
-									className="flex items-center gap-1.5"
-								>
-									<pm.Icon className="size-4" />
-									<span className="hidden sm:inline">{pm.label}</span>
-								</TabsTrigger>
-							))}
-						</TabsList>
-						<TabsContent value={selectedManager}>
-							<code className="text-xs font-mono px-2 py-1.5 rounded break-all">
-								{command}
-							</code>
-						</TabsContent>
-					</Tabs>
-				</DropdownMenuContent>
-			</DropdownMenu>
+		<div
+			className={cn(
+				"opacity-0 ease-out group-hover:opacity-100 duration-200 transition-opacity",
+				dropdownOpen && "opacity-100",
+			)}
+		>
+			<div className="inline-flex items-center gap-0.5">
+				<Button
+					variant="outline"
+					size="sm"
+					className={cn(
+						"rounded-md gap-2 border rounded-r-none shadow-sm transition-all",
+					)}
+					onClick={handleCopy}
+				>
+					{copied ? (
+						<Check className="size-4" />
+					) : (
+						selectedPackageManager && (
+							<selectedPackageManager.Icon className="size-4" />
+						)
+					)}
+					<span className="text-sm font-medium">
+						{copied ? "Copied!" : "Copy"}
+					</span>
+				</Button>
+				<DropdownMenu open={dropdownOpen} onOpenChange={setDropdownOpen}>
+					<DropdownMenuTrigger asChild>
+						<Button
+							variant="outline"
+							size="icon"
+							className="rounded-md border shadow-sm rounded-l-none h-8"
+						>
+							<ChevronDown className="size-4" />
+						</Button>
+					</DropdownMenuTrigger>
+					<DropdownMenuContent align="end" className="w-full max-w-lg p-3">
+						<Tabs
+							value={selectedManager}
+							onValueChange={(value) =>
+								setSelectedManager(value as PackageManager)
+							}
+							className="bg-secondary rounded-lg pb-4 overflow-hidden p-1.5"
+						>
+							<TabsList className="w-full border-b rounded-none">
+								{packageManagers.map((pm) => (
+									<TabsTrigger
+										key={pm.value}
+										value={pm.value}
+										className="flex items-center gap-1.5"
+									>
+										<pm.Icon className="size-4" />
+										<span className="hidden sm:inline">{pm.label}</span>
+									</TabsTrigger>
+								))}
+							</TabsList>
+							<TabsContent value={selectedManager}>
+								<code className="text-xs font-mono px-2 py-1.5 rounded break-all">
+									{command}
+								</code>
+							</TabsContent>
+						</Tabs>
+					</DropdownMenuContent>
+				</DropdownMenu>
+			</div>
 		</div>
 	);
 };
