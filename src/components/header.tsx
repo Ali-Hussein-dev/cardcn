@@ -6,17 +6,16 @@ import { Button } from "@/components/ui/button";
 import { urls } from "@/constants/urls";
 
 const links = [
-	 {
-	   label: "Formcn",
-	   href: "https://formcn.dev/?ref=cardcn",
-	   target: "_blank",
-	   rel: "noopener noreferrer",
-	 },
 	{
-	  label: "Hire me",
-	  href: "https://ali-hussein.com",
-	  target: "_blank",
-	  rel: "noopener noreferrer",
+		label: "Shoogle",
+		href: urls.shoogle,
+		target: "_blank",
+	},
+	{
+		label: "Hire me",
+		href: "https://ali-hussein.com",
+		target: "_blank",
+		rel: "noopener noreferrer",
 	},
 ];
 
@@ -40,11 +39,16 @@ export function Header() {
 				<nav className="flex items-center grow pl-4">
 					{links.map(({ href, label, target, rel }) => {
 						return (
-							<Button key={href} variant="ghost" size="sm" className="text-sm">
-								<a href={href} target={target} rel={rel}>
+							<a key={href} href={href} target={target} rel={rel}>
+								<Button
+									key={href}
+									variant="ghost"
+									size="sm"
+									className="text-sm"
+								>
 									{label}
-								</a>
-							</Button>
+								</Button>
+							</a>
 						);
 					})}
 					{/* {links.map(({ href, label, target, rel }) => {
