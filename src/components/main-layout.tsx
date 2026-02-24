@@ -20,6 +20,12 @@ const SidebarNav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 	const router = useRouterState();
 	const currentPath = router.location.pathname;
 
+	const handleLinkClick = () => {
+		// Scroll immediately and again after navigation (resetScroll timing can miss layout shifts)
+		window.scrollTo(0, 0);
+		onLinkClick?.();
+	};
+
 	return (
 		<nav className="flex flex-col gap-4 lg:gap-6">
 			{cardCategories.map((category) => {
@@ -28,7 +34,7 @@ const SidebarNav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 					<Link
 						key={category.to}
 						to={category.to}
-						onClick={onLinkClick}
+						onClick={handleLinkClick}
 						className={cn(
 							"transition-colors flex gap-2 items-center justify-between",
 							isActive
@@ -64,13 +70,13 @@ const MobileSidebarDrawer = () => {
 						className="lg:hidden sm:w-fit rounded-sm w-full"
 					>
 						<HiBars3 className="size-4" />
-						<span>Cards Catagories</span>
+						<span>Cards Categories</span>
 					</Button>
 				</DrawerTrigger>
 			</div>
 			<DrawerContent>
 				<DrawerHeader>
-					<DrawerTitle>Cards Catagories</DrawerTitle>
+					<DrawerTitle>Cards Categories</DrawerTitle>
 				</DrawerHeader>
 				<div className="px-4 pb-4">
 					<SidebarNav onLinkClick={() => setOpen(false)} />
