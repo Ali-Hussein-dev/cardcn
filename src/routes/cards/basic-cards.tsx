@@ -20,7 +20,7 @@ function RouteComponent() {
 	return (
 		<MainLayout>
 			<CategoryHeader
-				title="Custom shadcn cards"
+				title="Shadcn Cards Collection"
 				description={
 					cardCategories.find(
 						(category) => category.to === "/cards/basic-cards",

@@ -2,7 +2,8 @@ export const cardCategories = [
 	{
 		name: "Basic cards",
 		to: "/cards/basic-cards",
-		description: "Beautifully styled shadcn cards for general use cases",
+		description:
+			"Explore free collection of shadcn card components, built with React and Tailwind CSS.",
 		status: "wip",
 	},
 	{
