@@ -12,8 +12,8 @@ const links = [
 		target: "_blank",
 	},
 	{
-		label: "Hire me",
-		href: "https://ali-hussein.com",
+		label: "Formcn",
+		href: "https://formcn.dev",
 		target: "_blank",
 		rel: "noopener noreferrer",
 	},

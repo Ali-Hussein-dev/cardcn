@@ -100,9 +100,9 @@ const Sidebar = () => {
 
 export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<>
+		<div className="bg-secondary/20">
 			<Header />
-			<div className="grid lg:grid-cols-12">
+			<div className="grid lg:grid-cols-12 max-w-[89rem] bg-background border-x mx-auto">
 				<Sidebar />
 				<div className="h-full lg:col-span-8 px-2 md:px-3 lg:px-5 relative border-x border-border/60 w-full max-w-5xl">
 					<div
@@ -118,8 +118,8 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 						{children}
 					</div>
 				</div>
-				<div className="lg:col-span-2 relative">
-					<div className="sticky top-14">
+				<div className="lg:col-span-2 relative justify-self-start">
+					<div className="sticky top-14 w-full">
 						<div className="w-full px-5 py-2 border-b border-dashed ">
 							<h2 className="text-left text-xs font-bold uppercase text-amber-500">
 								Gold Sponsors
@@ -145,7 +145,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 				</div>
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 };
 export const CategoryHeader = ({
