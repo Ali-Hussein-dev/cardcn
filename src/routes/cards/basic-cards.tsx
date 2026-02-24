@@ -27,7 +27,7 @@ function RouteComponent() {
 					)?.description as string
 				}
 			/>
-			<div className="grid grid-cols-1 w-full gap-4 max-w-173 mx-auto px-2">
+			<div className="grid grid-cols-1 w-full gap-4 max-w-173 mx-auto px-3">
 				{basicCards.map((card) => (
 					<CardContainer key={card.id} id={card.id}>
 						{card.component}

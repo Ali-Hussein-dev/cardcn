@@ -17,7 +17,7 @@ export const Card_20 = () => {
 				alt="Abstract gradient background"
 			/>
 			{/* Overlay gradient */}
-			<div className="absolute inset-0 bg-background/5 backdrop-blur-sm z-10 group-hover:bg-transparent transition-all duration-300 group-hover:backdrop-blur-none"></div>
+			<div className="absolute inset-0 bg-background/5 z-10 group-hover:bg-transparent transition-all duration-300 group-hover:backdrop-blur-none"></div>
 			<div className="isolate z-50 flex flex-col gap-2 relative grow justify-end">
 				<CardHeader>
 					<CardTitle>{Placeholder.title}</CardTitle>

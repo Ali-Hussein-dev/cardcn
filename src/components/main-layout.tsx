@@ -14,7 +14,7 @@ import { urls } from "@/constants/urls";
 import { cn } from "@/lib/utils";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { SponsorshipSlot } from "./sponsorship-slot";
+import { ShadcnStudioMini, SponsorshipSlot } from "./sponsorship-slot";
 
 const SidebarNav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 	const router = useRouterState();
@@ -115,6 +115,11 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 						}}
 					/>
 					<div className="border-x bg-background z-10 isolate w-full h-full">
+						<div className="xl:hidden px-2 border-b flex flex-row items-center justify-between bg-accent/15">
+							<div className="border-x px-4 py-3 max-w-md mx-auto bg-background">
+								<ShadcnStudioMini />
+							</div>
+						</div>
 						{children}
 					</div>
 				</div>
@@ -156,7 +161,7 @@ export const CategoryHeader = ({
 	description: string;
 }) => {
 	return (
-		<div className="relative flex flex-col gap-2 py-6 border-b w-full px-4 md:px-6 mb-5 bg-accent/10">
+		<div className="relative flex flex-col gap-2 py-6 border-b w-full px-4 md:px-6 mb-5 bg-accent/15">
 			<h1 className="text-2xl font-black">{title}</h1>
 			<p className="text-sm text-muted-foreground">{description}</p>
 		</div>
