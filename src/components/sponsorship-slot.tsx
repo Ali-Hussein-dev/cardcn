@@ -1,64 +1,10 @@
+/** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
 import { urls } from "@/constants/urls";
+import { EfferdSquareLogo, ShadcnStudioSquareLogo } from "./logos";
 
 export const ShadcnStudioMini = () => (
 	<div className="flex items-center justify-center gap-2">
-		<svg
-			viewBox="0 0 328 329"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			className="size-8"
-			aria-hidden="true"
-		>
-			<rect
-				y="0.5"
-				width="328"
-				height="328"
-				rx="164"
-				fill="currentColor"
-			></rect>
-			<path
-				d="M165.018 72.3008V132.771C165.018 152.653 148.9 168.771 129.018 168.771H70.2288"
-				stroke-width="20"
-				className="stroke-background"
-			></path>
-			<path
-				d="M166.627 265.241L166.627 204.771C166.627 184.889 182.744 168.771 202.627 168.771L261.416 168.771"
-				stroke-width="20"
-				className="stroke-background"
-			></path>
-			<line
-				x1="238.136"
-				y1="98.8184"
-				x2="196.76"
-				y2="139.707"
-				stroke-width="20"
-				className="stroke-background"
-			></line>
-			<line
-				x1="135.688"
-				y1="200.957"
-				x2="94.3128"
-				y2="241.845"
-				stroke-width="20"
-				className="stroke-background"
-			></line>
-			<line
-				x1="133.689"
-				y1="137.524"
-				x2="92.5566"
-				y2="96.3914"
-				stroke-width="20"
-				className="stroke-background"
-			></line>
-			<line
-				x1="237.679"
-				y1="241.803"
-				x2="196.547"
-				y2="200.671"
-				stroke-width="20"
-				className="stroke-background"
-			></line>
-		</svg>
+		<ShadcnStudioSquareLogo />
 		<div className="flex flex-col">
 			<span className="text-sm leading-tight font-medium">
 				shadcnstudio.com
@@ -69,22 +15,54 @@ export const ShadcnStudioMini = () => (
 		</div>
 	</div>
 );
+export const EfferdMini = () => (
+	<div className="flex items-center justify-center gap-2">
+		<EfferdSquareLogo />
+		<div className="flex flex-col">
+			<span className="text-sm leading-tight font-medium">efferd.com</span>
+			<span className="text-muted-foreground text-xs">
+				preimum shadcn blocks
+			</span>
+		</div>
+	</div>
+);
 const ShadcnStudio = () => (
 	<a
 		href={urls.sponsors.shadcnStudio}
 		target="_blank"
 		rel="noopener noreferrer"
 	>
-		<section className="space-y-4 border-b border-dashed px-4 py-6 transition-colors group-hover:text-current group-active:text-current">
+		<div className="space-y-4 border-b border-dashed px-4 py-6 transition-colors group-hover:text-current group-active:text-current">
 			<header className="flex flex-col gap-2">
 				<ShadcnStudioMini />
 				<p className="text-muted-foreground text-center">
 					Discover more card variants at ShadcnStudio
 				</p>
 			</header>
-		</section>
+		</div>
+	</a>
+);
+const Efferd = () => (
+	<a
+		href={urls.sponsors.shadcnStudio}
+		target="_blank"
+		rel="noopener noreferrer"
+	>
+		<div className="border-b border-dashed px-4 py-6 transition-colors group-hover:text-current group-active:text-current">
+			<div className="flex flex-col gap-2">
+				<EfferdMini />
+				<p className="text-muted-foreground text-center">
+					Discover modern shadcn blocks at Efferd
+				</p>
+			</div>
+		</div>
 	</a>
 );
 export function SponsorshipSlot() {
-  return <ShadcnStudio />
+	return (
+		<div className="flex flex-col">
+			<ShadcnStudio />
+			<Efferd />
+		</div>
+	);
 }

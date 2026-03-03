@@ -4,7 +4,8 @@ export const urls = {
 	becomeSponsor: "https://github.com/sponsors/Ali-Hussein-dev",
 	shoogle: "https://shoogle.dev?via=cardcn",
 	sponsors: {
+		efferd: "https://efferd.com?utm_source=cardcn&utm_medium=banner",
 		shadcnStudio:
-			"https://shadcnstudio.com/?utm_source=cardcn&utm_medium=banner&utm_campaign=github",
+			"https://shadcnstudio.com/docs/components/card?utm_source=cardcn&utm_medium=banner&utm_campaign=github",
 	},
 };

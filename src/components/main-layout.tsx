@@ -14,7 +14,12 @@ import { urls } from "@/constants/urls";
 import { cn } from "@/lib/utils";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { ShadcnStudioMini, SponsorshipSlot } from "./sponsorship-slot";
+import { EfferdSquareLogo } from "./logos";
+import {
+	EfferdMini,
+	ShadcnStudioMini,
+	SponsorshipSlot,
+} from "./sponsorship-slot";
 
 const SidebarNav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
 	const router = useRouterState();
@@ -116,8 +121,9 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 					/>
 					<div className="border-x bg-background z-10 isolate w-full h-full">
 						<div className="xl:hidden px-2 border-b flex flex-row items-center justify-between bg-accent/15">
-							<div className="border-x px-4 py-3 max-w-md mx-auto bg-background">
+							<div className="border-x px-4 py-3 max-w-lg mx-auto bg-background flex items-center justify-center gap-7">
 								<ShadcnStudioMini />
+								<EfferdMini />
 							</div>
 						</div>
 						{children}
