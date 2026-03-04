@@ -3,7 +3,11 @@ import { urls } from "@/constants/urls";
 import { EfferdSquareLogo, ShadcnStudioSquareLogo } from "./logos";
 
 export const ShadcnStudioMini = () => (
-	<div className="flex items-center justify-center gap-2">
+	<a
+		href={urls.sponsors.shadcnStudio}
+		target="_blank"
+		className="flex items-center justify-center gap-2"
+	>
 		<ShadcnStudioSquareLogo />
 		<div className="flex flex-col">
 			<span className="text-sm leading-tight font-medium">
@@ -13,10 +17,14 @@ export const ShadcnStudioMini = () => (
 				shadcn blocks &amp; templates
 			</span>
 		</div>
-	</div>
+	</a>
 );
 export const EfferdMini = () => (
-	<div className="flex items-center justify-center gap-2">
+	<a
+		href={urls.sponsors.efferd}
+		target="_blank"
+		className="flex items-center justify-center gap-2"
+	>
 		<EfferdSquareLogo />
 		<div className="flex flex-col">
 			<span className="text-sm leading-tight font-medium">efferd.com</span>
@@ -24,14 +32,10 @@ export const EfferdMini = () => (
 				preimum shadcn blocks
 			</span>
 		</div>
-	</div>
+	</a>
 );
 const ShadcnStudio = () => (
-	<a
-		href={urls.sponsors.shadcnStudio}
-		target="_blank"
-		rel="noopener noreferrer"
-	>
+	<a href={urls.sponsors.shadcnStudio} target="_blank">
 		<div className="space-y-4 border-b border-dashed px-4 py-6 transition-colors group-hover:text-current group-active:text-current">
 			<header className="flex flex-col gap-2">
 				<ShadcnStudioMini />
@@ -43,11 +47,7 @@ const ShadcnStudio = () => (
 	</a>
 );
 const Efferd = () => (
-	<a
-		href={urls.sponsors.shadcnStudio}
-		target="_blank"
-		rel="noopener noreferrer"
-	>
+	<a href={urls.sponsors.efferd} target="_blank">
 		<div className="border-b border-dashed px-4 py-6 transition-colors group-hover:text-current group-active:text-current">
 			<div className="flex flex-col gap-2">
 				<EfferdMini />
