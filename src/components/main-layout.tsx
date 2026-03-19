@@ -129,7 +129,8 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 						{children}
 					</div>
 				</div>
-				<div className="lg:col-span-2 relative justify-self-start">
+				{/* Sponsorship Slot for Desktop */}
+				<div className="lg:col-span-2 hidden lg:block relative justify-self-start">
 					<div className="sticky top-14 w-full">
 						<div className="w-full px-5 py-2 border-b border-dashed ">
 							<h2 className="text-left text-xs font-bold uppercase text-amber-500">
