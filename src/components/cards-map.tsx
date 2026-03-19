@@ -25,6 +25,9 @@ import { Card_24 } from "./cards/card-24";
 import { Card_25 } from "./cards/card-25";
 import { Card_26 } from "./cards/card-26";
 import { Card_27 } from "./cards/card-27";
+import { Card_28 } from "./cards/card-28";
+import { Card_29 } from "./cards/card-29";
+import { Card_30 } from "./cards/card-30";
 
 export const basicCards = [
 	{
@@ -139,8 +142,26 @@ export const productCards = [
 		component: <Card_25 />,
 	},
 ];
+
+export const testimonialCards = [
+	{
+		id: "28",
+		component: <Card_28 />,
+	},
+	{
+		id: "29",
+		component: <Card_29 />,
+	},
+	{
+		id: "30",
+		component: <Card_30 />,
+	},
+];
+
 const categories = {
 	"/cards/basic-cards": basicCards,
+	"/cards/product-cards": productCards,
+	"/cards/testimonial-cards": testimonialCards,
 };
 export const getCardsCount = (str: string) => {
 	const category = Object.keys(categories).find((key) => key === str);
