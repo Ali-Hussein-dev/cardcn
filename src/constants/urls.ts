@@ -6,6 +6,6 @@ export const urls = {
 	sponsors: {
 		efferd: "https://efferd.com?utm_source=cardcn&utm_medium=banner",
 		shadcnStudio:
-			"https://shadcnstudio.com/docs/components/card?utm_source=cardcn&utm_medium=banner&utm_campaign=github",
+			"https://shadcnstudio.com/blocks?utm_source=cardcn&utm_medium=banner&utm_campaign=github",
 	},
 };
