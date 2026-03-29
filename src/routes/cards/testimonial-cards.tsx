@@ -9,9 +9,9 @@ export const Route = createFileRoute("/cards/testimonial-cards")({
 	component: RouteComponent,
 	head: () => ({
 		meta: seo({
-			title: "Testimonial cards | Cardcn",
+			title: "Shadcn Testimonial Card Components | Cardcn",
 			description:
-				"Beautifully styled shadcn cards for displaying customer testimonials",
+				"Explore a collection of awesome Shadcn Testimonial Card components built with React and Tailwind CSS.",
 		}),
 	}),
 });

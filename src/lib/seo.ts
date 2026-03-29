@@ -1,8 +1,7 @@
-
-
 const defaultParams = {
-	title: "shadcn cards | Cardcn",
-	description: "Free collection of shadcn cards",
+	title: "Shadcn Card | Cardcn",
+	description:
+		"Explore a collection of awesome Shadcn Card components built with React and Tailwind CSS.",
 	siteName: "cardcn",
 	url: "https://cardcn.dev/",
 	image: "https://cardcn.dev/opengraph-image.jpg",
