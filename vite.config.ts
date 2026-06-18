@@ -18,7 +18,7 @@ const config = defineConfig({
     tanstackStart({
       sitemap: {
         enabled: true,
-        host: "https://tancn.dev/",
+        host: "https://cardcn.dev/",
       },
       prerender: {
         enabled: true,
